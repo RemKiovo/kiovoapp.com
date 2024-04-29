@@ -8,7 +8,9 @@ document
             value.classList.add("animation-trigger");
         }, 0);
         count++;
-        value.innerText = `You've pressed the button ${count} times!`;
+        value.innerText = `You've pressed the button ${count} ${
+            count === 1 ? "time" : "times"
+        }`;
     });
 value.addEventListener("animationend", function () {
     value.classList.remove("animation-trigger");

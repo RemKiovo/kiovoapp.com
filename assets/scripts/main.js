@@ -10,7 +10,7 @@ document
         count++;
         value.innerText = `You've pressed the button ${count} ${
             count === 1 ? "time" : "times"
-        }`;
+        }!`;
     });
 value.addEventListener("animationend", function () {
     value.classList.remove("animation-trigger");
